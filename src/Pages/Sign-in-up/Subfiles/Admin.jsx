@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import "../signInUp.css";
+import "../SignInUp.css";
 
 function Admin({ setSignin }) {
     const [email, setEmail] = useState("");
