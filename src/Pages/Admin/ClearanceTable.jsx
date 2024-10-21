@@ -26,7 +26,7 @@ function ClearanceTable() {
     const handleStatusChange = async (id, newStatus) => {
         try {
             // Update the status of the clearance request in the backend
-            await axios.patch(`http://localhost:5000/api/clearance/${id}/status`, {
+            await axios.patch(`https://capstone-be-g5sw.onrender.com/api/clearance/${id}/status`, {
                 status: newStatus,
             });
 
