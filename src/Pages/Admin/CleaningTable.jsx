@@ -26,7 +26,7 @@ function CleaningTable() {
     const handleStatusChange = async (id, newStatus) => {
         try {
             // Update the status of the cleaning request in the backend
-            await axios.patch(`http://localhost:5000/api/cleaning/${id}/status`, {
+            await axios.patch(`https://capstone-be-g5sw.onrender.com/api/cleaning/${id}/status`, {
                 status: newStatus,
             });
 
