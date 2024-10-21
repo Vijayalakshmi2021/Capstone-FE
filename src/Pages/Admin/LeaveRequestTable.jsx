@@ -26,7 +26,7 @@ function LeaveRequestTable() {
     const handleStatusChange = async (id, newStatus) => {
         try {
             // Update the status of the leave request in the backend
-            await axios.patch(`http://localhost:5000/api/leave/${id}/status`, {
+            await axios.patch(`https://capstone-be-g5sw.onrender.com/api/leave/${id}/status`, {
                 status: newStatus,
             });
 
