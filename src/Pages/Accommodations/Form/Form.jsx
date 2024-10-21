@@ -72,7 +72,7 @@ function Form() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:5000/api/accommodation", formData);
+            await axios.post("https://capstone-be-g5sw.onrender.com formData);
 
             Swal.fire({
                 icon: "success",
