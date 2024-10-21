@@ -20,7 +20,7 @@ function Signup({ setSignin }) {
         if (password === conPassword) {
             try {
                 const response = await axios.post(
-                    "http://localhost:5000/api/user/signup",
+                    "https://capstone-be-g5sw.onrender.com/api/user/signup",
                     {
                         name,
                         email,
