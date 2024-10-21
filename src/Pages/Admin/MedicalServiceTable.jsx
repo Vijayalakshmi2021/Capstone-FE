@@ -14,7 +14,7 @@ function MedicalServiceTable() {
     useEffect(() => {
         // Fetch data from the API endpoint
         axios
-            .get("https://capstone-be-g5sw.onrender.com")
+            .get("https://capstone-be-g5sw.onrender.com/api/medical")
             .then((response) => {
                 setMedicalServiceRequests(response.data);
             })
@@ -26,7 +26,7 @@ function MedicalServiceTable() {
     const handleStatusChange = async (id, newStatus) => {
         try {
             // Update the status of the medical service request in the backend
-            await axios.patch(`http://localhost:5000/api/medical/${id}/status`, {
+            await axios.patch(`https://capstone-be-g5sw.onrender.com/api/medical/${id}/status`, {
                 status: newStatus,
             });
 
