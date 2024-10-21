@@ -14,7 +14,7 @@ function RoomInquiriesTable() {
     useEffect(() => {
         // Fetch data from the API endpoint
         axios
-            .get("http://localhost:5000/api/inquiries")
+            .get("https://capstone-be-g5sw.onrender.com/api/inquiries")
             .then((response) => {
                 setInquiries(response.data);
             })
@@ -26,7 +26,7 @@ function RoomInquiriesTable() {
     const handleStatusChange = async (id, newStatus) => {
         try {
             // Update the status of the inquiry in the backend
-            await axios.patch(`http://localhost:5000/api/inquiries/${id}/status`, {
+            await axios.patch(`https://capstone-be-g5sw.onrender.com/api/inquiries/${id}/status`, {
                 status: newStatus,
             });
 
