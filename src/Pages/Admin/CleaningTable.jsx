@@ -14,7 +14,7 @@ function CleaningTable() {
     useEffect(() => {
         // Fetch data from the API endpoint
         axios
-            .get("http://localhost:5000/api/cleaning")
+            .get("https://capstone-be-g5sw.onrender.com/api/cleaning")
             .then((response) => {
                 setCleaningRequests(response.data);
             })
