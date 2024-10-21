@@ -14,7 +14,7 @@ function MedicalServiceTable() {
     useEffect(() => {
         // Fetch data from the API endpoint
         axios
-            .get("http://localhost:5000/api/medical")
+            .get("https://capstone-be-g5sw.onrender.com")
             .then((response) => {
                 setMedicalServiceRequests(response.data);
             })
