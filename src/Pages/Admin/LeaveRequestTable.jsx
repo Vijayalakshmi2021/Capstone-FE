@@ -14,7 +14,7 @@ function LeaveRequestTable() {
     useEffect(() => {
         // Fetch data from the API endpoint
         axios
-            .get("http://localhost:5000/api/leave")
+            .get("https://capstone-be-g5sw.onrender.com/leave")
             .then((response) => {
                 setLeaveRequests(response.data);
             })
